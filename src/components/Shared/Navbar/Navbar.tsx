@@ -15,6 +15,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
+import AccountMenu from "./AccoountMenu";
 
 interface Props {
   window?: () => Window;
@@ -98,6 +99,13 @@ const Navbar = () => {
                     <Typography>item4</Typography>
                     <Typography>item5</Typography>
                   </Stack>
+                </Stack>
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <AccountMenu />
                 </Stack>
               </Stack>
             </Container>
